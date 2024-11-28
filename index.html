@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit = no">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>Form validation</title>
+</head>
+<body>
+    <div class="container">
+    <form action="">
+
+        <div class="input-group">
+        <label for="fname">Firstname</label>
+        <input type="text" placeholder="firstname" id="fname" required><br>
+    </div>
+
+
+    <div class="input-group">
+        <label for="lname">lastname</label>
+        <input type="text" placeholder="lastname" id="lname" required>
+    </div>
+
+
+        <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" placeholder="email" id="email" spellcheck="false" onkeyup="validate()"> 
+        <br>
+        <small style="color: red;" id="error"></small>
+    </div>
+
+
+        <div class="input-group">
+    
+        <label for="password">Password</label>
+        <input type="password" placeholder="password" id="password" onkeyup="validatepass()" required>
+        <br>
+        <small id="passstrenght"></small>
+        
+        <small id="passlenght"></small>
+    </div>
+    <div class="input-group">
+        <label for="passwordc">Confirm Password</label>
+        <input type="password" placeholder="confirm password" id="passwordc" required onkeyup="validate1()">
+       <br> <small id="passerror"></small><br>
+    </div>
+        <input type="submit" id="submit">
+    </form>
+</div>
+
+
+
+
+
+    <script src="jsfile.js"></script>
+</body>
+</html>
